@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Ramírez" />
+    <title>Desafío Portafolio</title>
+
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Oswald:wght@200;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- Estilos Propios -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+
+<div class="container my-5 text-center">
+    <h2>Juego virtual "Cachipún"</h2>
+    <h4>Por favor elije tu opción</h4>
+    <form id="form1" name="form1" method="post" action="#">
+        <label for="opc11">Piedra</label>
+        <input type="radio" id="opc11" name="grupo1" value="0" />
+        <label for="opc12">Papel</label>
+        <input type="radio" id="opc12" name="grupo1" value="1" />
+        <label for="opc13">Tijera</label>
+        <input type="radio" id="opc13" name="grupo1" value="2" />
+        <hr>
+
+        <input type="reset">
+        <input type="button" id="btnComprobar" name="btnComprobar" value="A jugar!!!!"
+            onclick="comprobarSeleccionado();" />
+    </form>
+    <hr>
+    <div id="jugadashechas"></div>
+   
+    <div id="resultado"></div>
+
+    <div id="salida"></div>
+</div>
+<!-- JS propio -->
+<script src="./assets/script/scripts.js"></script>
+
+</body>
+
+</html>
